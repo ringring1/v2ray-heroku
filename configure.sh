@@ -22,10 +22,10 @@ install -d /usr/local/caddy
 cat << EOF > /usr/local/caddy/Caddyfile
 http://0.0.0.0:$PORT
 {
-	root /wwwroot
+	root /usr/share/wwwroot
 	index index.html
 	timeouts none
-	proxy /ws 127.0.0.1:9090 {
+	proxy /v2rui 127.0.0.1:9090 {
 		websocket
 		header_upstream -Origin
 	}
@@ -51,6 +51,10 @@ cat << EOF > /usr/local/etc/v2ray/config.json
             },
             "streamSettings": {
                 "network": "ws"
+		"security": "auto",
+		"wsSettings": {
+		    "path": "/v2rui"		    
+		}
             }
         }
     ],
