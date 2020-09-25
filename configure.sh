@@ -51,9 +51,7 @@ cat << EOF > /usr/local/etc/v2ray/config.json
             },
             "streamSettings": {
                 "network": "ws"
-		"security": "auto",
-		"wsSettings": {
-		    "path": "/v2rui"		    
+		"security": "auto",	    
 		}
             }
         }
