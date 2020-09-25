@@ -5,10 +5,10 @@
     "env": {
         "UUID": {
             "description": "V2Ray UUID",
-            "value": "e52ea0d7-4937-4847-b590-e230c09090d6"
+            "value": "580814c2-a784-44d0-9380-56aa03a7de75"
         }
     },
     "website": "https://",
-    "repository": "https://github.com/xiaokanhongchen/v2ray-heroku",
+    "repository": "https://github.com/ringring1/v2ray-heroku",
     "stack": "container"
 }
