@@ -15,7 +15,7 @@ curl -L -H "Cache-Control: no-cache" -o /tmp/caddy/caddy.tar.gz --insecure https
 tar -zxvf /tmp/caddy.tar.gz caddy
 install -m 755 /tmp/caddy/caddy /usr/local/bin/caddy
 mkdir /usr/local/wwwroot
-wget -O /usr/share/wwwroot/index.html https://raw.githubusercontent.com/caddyserver/dist/master/welcome/index.html
+wget -O /usr/share/wwwroot/index.html https://github.com/ringring1/mixcaddy/raw/master/index.html
 rm -rf /tmp/caddy
 
 install -d /usr/local/caddy
