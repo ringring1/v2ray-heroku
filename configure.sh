@@ -12,9 +12,9 @@ rm -rf /tmp/v2ray
 
 mkdir /tmp/caddy
 curl -L -H "Cache-Control: no-cache" -o /tmp/caddy/caddy.tar.gz --insecure https://github.com/caddyserver/caddy/releases/download/v1.0.3/caddy_v1.0.3_linux_amd64.tar.gz
-tar -zxvf /tmp/caddy.tar.gz caddy
+tar -zxvf /tmp/caddy.tar.gz /tmp/caddy
 install -m 755 /tmp/caddy/caddy /usr/local/bin/caddy
-mkdir /usr/local/wwwroot
+mkdir /usr/share/wwwroot
 wget -O /usr/share/wwwroot/index.html https://github.com/ringring1/mixcaddy/raw/master/index.html
 rm -rf /tmp/caddy
 
